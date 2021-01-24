@@ -1,0 +1,1470 @@
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+�, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+font-size-adjust: none;
+-webkit-text-size-adjust:none;
+}
+
+/*BASIC DEFINITIONS*/
+@-webkit-viewport{width:device-width}
+@-moz-viewport{width:device-width}
+@-ms-viewport{width:device-width}
+@-o-viewport{width:device-width}
+@viewport{width:device-width}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(80,80,80);
+    line-height: 19px;
+    background: rgb(255,255,255);
+    overflow-x: hidden;
+}     
+
+input {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
+
+.letter {
+    position: relative;
+    margin: 0 auto 0 auto;
+}
+
+h2 {
+    font-size: 36px;     
+    line-height: 36px;
+    font-weight: 600;
+    color: rgb(255,192,0);
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(120,120,120);
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 45px;
+}
+
+body > .fucking-eu-cookies {
+    background: #fce051;
+    padding: 15px 5%; 
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body > .fucking-eu-cookies a {
+    color: #fff;
+}
+
+body > .fucking-eu-cookies span {
+    width: 100%;
+}
+
+body > .fucking-eu-cookies button {
+    margin: 0 auto;
+    padding: 4px;
+    background: rgb(255,192,5);
+    border: none;
+    border-bottom: 1px solid #ff9600;
+    -webkit-border-radius: 3px;         
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #fff;   
+}
+
+
+/*END OF BASIC DEFINITIONS*/
+
+/*NAVIGATION*/
+nav {
+    position: fixed;
+    top: 27%;
+    right: 5%;
+    z-index: 10;
+}
+
+nav a {
+    display: block;
+    width: 60px;
+    height: 44px;
+    padding: 16px 0 0 0;
+    border: 1px solid rgb(220,220,220);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    color: rgb(220,220,220);
+    font-size: 29px;
+    text-align: center;
+}
+
+nav a:hover {
+    color: rgb(255,192,0);
+}
+
+nav .spacer {
+    width: 3px;
+    height: 25px;
+    margin-left: 30px;
+    background: url('../images/nav_spacer.png') top center no-repeat;
+}
+
+/*END OF NAVIGATION*/
+
+/*HEADER*/
+#header {
+    width:100%;
+    min-height: 677px;
+    background: url('../images/background_header.jpg') top center no-repeat;
+}
+
+.contactLine {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contactLine div a {
+    float: left;
+    line-height: 33px;
+    padding: 1px 8px 1px 5px;
+    margin: 27px 12px 0 0;
+    background: rgba(255,255,255,0.9);
+    border: 1px solid rgb(220,220,220);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: rgb(40,40,40);
+    text-decoration: none;
+}
+
+.contactLine .left a:first-child:before {
+    content: "info@exekutormasmulu.cz";
+}
+
+.contactLine .left a:nth-child(2):before {
+    content: "(+420) 605 960 787";
+}
+
+.contactLine .right a:first-child:before {
+    content: "Blog";
+}
+
+/*
+.contactLine .right a:last-child:before {
+    content: "Poslat příteli";
+}
+*/
+
+.contactLine div a:last-child {
+    margin-right: 0;
+}
+
+.contactLine div a img {
+    float: left;
+    margin-top: 8px;
+}
+
+.contactLine div span {
+    float: left;
+    width: 1px;
+    height: 23px;
+    margin: 6px 7px 0 7px;
+    background: rgb(220,220,220);
+}
+
+.contactLine div a.facebook {
+    width: 37px;
+    height: 37px;
+    padding: 0;
+    border: none;
+    background: url('../images/facebook.png') top center no-repeat;
+
+}
+
+.contactLine .left {
+    margin-left: 5%;
+}
+
+.contactLine .right {
+    margin-right: 5%;
+}
+
+#logo {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#laptop {
+    width: 100%;
+    margin-top: 37px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#laptop .youtube{
+    position: relative;
+    width: 576px;
+    height: 367px;
+    margin-right: 225px;
+    padding: 28px 0 0 78px;
+    background: url('../images/laptop.png');
+}
+
+#lastArticles {
+    position: relative;
+    margin-right: -62px;
+    margin-top: 10px;
+    width: 297px;
+    height: 350px;
+}
+
+#lastArticles div {
+    float: right;
+    position: relative;
+    width: 300px;
+    margin-top: 10px;
+    z-index: 5;
+}
+
+#lastArticles > div:first-child {
+    width: auto;
+    float: right;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 15px 20px 15px 20px;
+    background: rgba(255,255,255,1);
+    border: 1px solid rgb(220,220,220);
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 17px;
+    color: rgb(40,40,40);
+}
+
+#lastArticles > div:first-child img {
+    float: left;
+    margin: 1px 10px 0 0;
+}
+
+#lastArticles > div:first-child span {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 4px;
+    height: 50px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: rgb(255,192,0);
+}
+
+#lastArticles a {
+    float: right;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 15px 20px 15px 20px;
+    background: rgba(255,255,255,0.9);
+    border: 1px solid rgb(220,220,220);
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 16px;
+    color: rgb(80,80,80);
+    text-decoration: none;
+}
+
+#lastArticles a:hover {
+    background: rgba(255,255,255,1);
+    color: rgb(40,40,40);
+}
+
+/*END OF HEADER*/
+
+/*FORMFIELD*/
+#formField h1 {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 600;
+    color: rgb(255,192,0);
+    text-align: center;
+}
+
+#formField h2 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: rgb(120,120,120);
+    text-align: center;
+}
+
+#formField h2 {
+    margin-bottom: 45px;
+}
+
+
+#formField {
+    padding-top: 40px;
+}
+
+
+#formField .form {
+    display: block;
+    width: 60%;
+    padding: 15px 30px;
+    margin: 0 auto 0 auto;
+    background: rgb(255,255,255);
+    border: 1px solid rgb(220,220,220);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#formField form .line {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+}
+
+#formField form .line div {
+
+    float: left;
+}
+
+#formField form .line div:nth-child(2) {
+    float: right;
+}
+
+#formField form .line div h3, #formField form .line div .title {
+    display: inline;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(80,80,80);
+}
+
+#formField form .line div a {
+    color: rgb(255,192,0);
+}
+
+
+#formField form .line div input[type="text"], #formField form .line div input[type="email"] {
+    float: left;
+    width: 247px;
+    height: 32px;
+    padding: 0 10px;
+    margin: 2px 0 0 0;
+    border: 1px solid rgb(190,190,190);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#formField form .line div input[type="text"]:focus, #formField form .line div input[type="email"]:focus {
+    outline: none;
+    border: 1px solid rgb(255,192,0);
+}
+
+#formField form .line:nth-child(1n+2) div input[type="text"], #formField form .line div input[type="email"] {
+    margin-right: 43px;
+}
+
+#formField form .line div input[type="radio"] {
+    display: none;
+}
+
+#formField form .line div label.radioLabel {
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin: 10px 15px 0 0;
+    font-size: 15px;
+}
+
+#formField form .line div label.radioLabel:before {
+    float: left;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border: 1px solid rgb(190,190,190);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#formField form .line div input[type="radio"]:checked + label.radioLabel:before {
+    content: "\f111";
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(255,192,0);
+    font-family: FontAwesome;
+    text-align: center;
+    border: 1px solid rgb(190,190,190);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#formField form .line div input[type="checkbox"] {
+    display: none;
+}
+
+#formField form .line div label.checkboxLabel:before {
+    float: left;
+    margin: 2px 43px 0 0;
+    content: "";
+    width: 26px;
+    height: 26px;
+    border: 1px solid rgb(190,190,190);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#formField form .line div input[type="checkbox"]:checked + label.checkboxLabel:before {
+    content: "\f00c";
+    font-size: 20px;
+    line-height: 26px;
+    color: rgb(255,192,0);
+    font-family: FontAwesome;
+    text-align: center;
+    border: 1px solid rgb(190,190,190);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#formField form .line .button {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 5px 0 0 15px;
+    border: 0;
+    background: rgb(255,239,194);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#formField form .line .button .shadow {
+    display: block;
+    width: 100%;
+    height: 29px;
+    background: rgb(255,150,0);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#formField form .line .button .cover {
+    display: table-cell;
+    width: 100%;
+    height: 27px;
+    background: rgb(255,192,0);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 22px;
+    line-height: 29px;
+    color: rgb(255,255,255);
+    text-align: center;
+}
+
+.robotAndButton {
+    width: 100%;
+    display: block;
+}
+
+.robotAndButton .g-recaptcha {
+    width: 304px;
+    display: block;
+    margin: 22px auto 0 auto;
+}
+
+.robotAndButton .button {
+    display: block;
+    width: 30%;
+    height: 59px;
+    margin: 22px auto;
+    padding: 0;
+    border: 0;
+    background: rgb(255,239,194);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.robotAndButton .button input {
+    display: block;
+    width: 100%;
+    height: 56px;
+    background: rgb(255,192,0);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 3px solid rgb(255,150,0);
+    font-size: 19px;
+    font-weight: 500;
+    color: rgb(255,255,255);
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-appearance: none;
+}
+
+.robotAndButton .button input:hover {
+    background: rgb(255,205,0);
+    border-bottom: 3px solid rgb(255,160,0);
+}
+/*END OF FORMFIELD*/
+
+/*WRITE ABOUT US*/
+#writeAboutUS {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#writeAboutUS a {
+    text-decoration: none;
+    margin: 10px 10px 10px 10px;;
+}
+
+#writeAboutUS a img {
+    height: 27px;
+}
+/*END OF WRITE ABOUT US*/
+
+/*ARTICLES*/
+#articles {
+    width: 100%;
+    padding: 40px 0 0 0;
+    background: url('../images/background_articles.png') center center no-repeat rgb(40,40,40);
+}
+
+#articles h3 {
+    color: rgb(180,180,180);
+}
+
+#articles .letter {
+    width: 80%;
+}
+
+#articles .letter .row {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#articles .letter .row.active {
+    display: flex;
+}
+
+#articles article {
+    width: 23%;
+    margin: 6px 2% 0 2%;
+    text-align: center;
+}
+
+#articles article .financialLogo {
+    display: inline-block;
+    width: 74px;
+    height: 57px;
+    padding-top: 17px;
+    background: rgb(102,102,102);
+    -webkit-border-radius: 37px;
+    -moz-border-radius: 37px;
+    border-radius: 37px;
+}
+
+#articles article h4 {
+    margin: 25px 0 0 0;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(255,255,255);
+}
+
+#articles article hr {
+    height: 2px;
+    width: 25%;
+    margin: 25px auto;
+    border: none;
+    background: rgb(60,60,60);
+}
+
+#articles article p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+    color: rgb(255,255,255);
+}
+
+#articles article .button {
+    display: block;
+    width: 100%;
+    margin: 22px 0;
+    padding-bottom: 2px;
+    background: rgb(0,0,0);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#articles article .button .cover {
+    display: block;
+    width: 100%;
+    padding: 14px 0;
+    background: rgb(255,192,0);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border-bottom: 3px solid rgb(255,150,0);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    color: rgb(255,255,255);
+    text-align: center;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+#articles article .button .cover:hover {
+    background: rgb(255,205,0);
+    border-bottom: 3px solid rgb(255,160,0);
+}
+
+#articles .pagination {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+#articles .pagination a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 5px 5px 30px 5px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    background: rgb(36,36,36);
+    border: 1px solid rgba(0,0,0,0);
+}
+
+#articles .pagination a .dot {
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 8px 0 0 8px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: rgb(255,255,255);
+}
+
+#articles .pagination a:hover, #articles .pagination a.active {
+    border: 1px solid rgba(255,192,0,1);
+}
+
+#articles .pagination a:hover .dot, #articles .pagination a.active .dot {
+    background: rgb(255,192,0);
+}
+/*END OF ARTICLES*/
+
+/*QUESTIONS*/
+#questions {
+    padding: 40px 0;
+}
+
+#questions .letter {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+#questions .button {
+    display: block;
+    width: 23%;
+    height: auto;
+    margin: 0 2% 18px 2%;
+    text-align: center;
+    padding-bottom: 2px;
+    border: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#questions .button .shadow {
+    display: block;
+    width: 100%;
+    padding-bottom: 3px;
+    background: rgb(217,217,217);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border-bottom: 2px solid rgb(244,244,244);
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+#questions .button .cover {
+    display: block;
+    width: 94%;
+    padding: 14px 3%;
+    background: rgb(240,240,240);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    color: rgb(80,80,80);
+    text-align: center;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+#questions .button .shadow:hover {
+    background: rgb(227,227,227);
+}
+
+#questions .button .shadow:hover .cover {
+    background: rgb(245,245,245);
+}
+
+/*END OF QUESTIONS*/
+
+/*FORM SEND SUCESS*/
+#header.landingPage {
+    min-height: 345px;
+    height: 345px;
+}
+
+#mainContent.landingPage {
+    width: 60%;
+}
+
+#mainContent.landingPage {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+#mainContent.landingPage h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: rgb(255,192,0);
+    text-align: center;
+}
+
+#mainContent.landingPage h3 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgb(120,120,120);
+    text-align: center;
+}
+
+#mainContent.landingPage .button {
+    display: block;
+    width: 60%;
+    margin: 22px auto;
+    padding-bottom: 2px;
+    background: rgb(255,239,194);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#mainContent.landingPage .button .cover {
+    display: block;
+    width: 100%;
+    height: 59px;
+    background: rgb(255,192,0);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border-bottom: 3px solid rgb(255,150,0);
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 59px;
+    color: rgb(255,255,255);
+    text-align: center;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+#mainContent.landingPage .button .cover:hover {
+    background: rgb(255,205,0);
+    border-bottom: 3px solid rgb(255,160,0);
+}
+
+/*END OF FORM SEND SUCESS*/
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    min-height: 163px;
+    padding: 40px 0 20px 0;
+    background: url('../images/background_footer.png') center center no-repeat rgb(40,40,40);
+    text-align: center;
+}
+
+footer p {
+    display: block;
+    max-width: 50%;
+    margin: 22px auto;
+    font-size: 15px;
+    line-height: 22px;
+    color: rgb(255,255,255);
+}
+
+footer strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(105,105,105);
+}
+/*END OF FOOTER*/
+
+/******************************MEDIA****************************/
+@media only screen and (max-width : 1130px) {
+    #laptop {
+        margin-top: 27px;
+    }
+
+    #formField form .line > div {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #lastArticles {
+        position: relative;
+        width: 60%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    #lastArticles div:first-child {
+        display: block;
+        width: 94%;
+        padding-left: 3%;
+        padding-right: 3%;
+        text-align: center;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+    #lastArticles div:first-child img {
+        display: none;
+    }
+
+    #lastArticles div:first-child span {
+        height: 100%;
+    }
+
+     #lastArticles div {
+        float: left;
+        width: 100%;
+     }
+
+     #lastArticles div a {
+        display: block;
+        width: 94%;
+        margin: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+        text-align: center;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+     }
+
+    #laptop .youtube {
+        position: relative;
+        width: 60%;
+        height: initial;
+        margin-top: 70px;
+        margin-right: 0;
+        padding: 0;
+        background: none;
+    }
+
+     #laptop .youtube iframe {
+        width: 100%;
+        min-height: 380px;
+        margin: 0;
+     }
+}
+
+
+@media only screen and (max-width : 1130px) {
+    body {
+        min-width: 920px;
+        overflow-x: visible;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    #formField .form {
+        width: 90%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.4)      and  (max-width: 920px),
+only screen and (   min--moz-device-pixel-ratio: 1.4)      and  (max-width: 920px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and  (max-width: 920px),
+only screen and (        min-device-pixel-ratio: 1.4)      and  (max-width: 920px),
+only screen and (                min-resolution: 137dpi) and  (max-width: 920px),
+only screen and (                min-resolution: 1.4dppx)  and  (max-width: 920px)
+{
+
+    body {
+        min-width: 0;
+        overflow-x: hidden;
+    }
+
+
+    h2, h3 {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #header {
+        background: none;
+        height: auto;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    
+    .contactLine {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contactLine .left, .contactLine .right {
+        float: none;
+        width: auto;
+        margin: 0;
+    }
+    
+    .contactLine .left {
+        padding-left: 5%;
+    }
+    
+    .contactLine .right {
+        padding-right: 5%;
+    }
+    
+    .contactLine .left a:last-child {
+        margin-right: 12px;
+    }
+    
+    .contactLine .left a:first-child {
+        margin-left: 0;
+    }
+    
+    .contactLine .right a:last-child {
+        margin-right: 0;
+    }
+               
+    .contactLine .left a, .contactLine .right a, .contactLine div a.facebook {
+        display: block;
+        width: 54px;
+        height: 54px;
+        padding: 0;
+        margin-left: 12px;
+        margin-right: 12px;
+        background: rgb(255,192,0);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid rgb(255,150,0);
+        font-size: 20px;
+        color: rgb(255,255,255);
+        line-height: 54px;
+        text-align: center;
+    }
+
+    .contactLine div a.facebook {
+        background: rgb(60,90,153);
+        border-bottom: 2px solid rgb(33,70,147);
+    }
+
+    .contactLine .left a:first-child:before {
+        content: "@";
+        font-weight: 800;
+        font-family: 'Source Sans Pro';
+        margin-left: 0;
+    }
+
+    .contactLine .left a:nth-child(2):before {
+        content: "\f095";
+        font-family: FontAwesome;
+    }
+
+    .contactLine .right a:first-child:before {
+        content: "\f086";
+        font-family: FontAwesome;
+    }
+
+    .contactLine .right a:nth-child(2):before {
+        content: "\f09a";
+        font-family: FontAwesome;
+        margin-right: 0;
+    }
+
+    .contactLine div a img, .contactLine div a span {
+        display: none;
+    }
+
+    .contactLine div a.facebook {
+        background-image: none;
+    }
+    
+    #logo {
+        margin-top: 35px;
+    }
+
+    #logo img {
+        width: 90%;
+        height: 30%;
+    }
+
+    #lastArticles {
+        position: relative;
+        width: 90%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    #lastArticles div:first-child {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background: rgb(250,250,250);
+        border-bottom: 2px solid rgb(220,220,220);
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    #lastArticles div:first-child img {
+        display: none;
+    }
+
+    #lastArticles div:first-child span {
+        width: 2px;
+        height: 100%;
+    }
+
+     #lastArticles div {
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+        border: none;
+     }                        
+
+     #lastArticles div a {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        background: rgb(251,251,251);
+        border-bottom: 2px solid rgb(230,230,230);
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: center;
+     }
+
+    #laptop .youtube {
+        position: relative;
+        width: 90%;
+        height: auto;
+        margin-top: 30px;
+        padding: 0;
+        background: none;
+    }
+
+     #laptop .youtube iframe {
+        width: 100%;
+        height: auto;
+        margin: 0;
+     }
+     
+     #formField h1 {
+        margin-top: 0;
+     }
+
+     #formField .form {
+        width: 84%;
+        padding: 3%;
+     }     
+
+     #formField form .line > div {
+        display: block;
+        width: 100%;
+        margin: 10px 0 0 0;
+     }
+     
+     #formField form .line > div:last-child {
+        margin-bottom: 20px;
+     }
+
+     #formField form .line:first-child div input[type="text"] {
+        width: 80%;
+     }
+
+     #formField form .line div input[type="text"], #formField form .line div input[type="email"] {
+        width: 100%;
+        height: 40px;   
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;        
+     }
+
+     #formField form .line .button {
+        width: 38px;
+        height: 38px;
+        margin-top: 2px;
+        margin-right: 0;
+     }
+
+     #formField form .line .button .shadow {
+        height: 40px;
+     }
+
+     #formField form .line .button .cover {
+        height: 38px;
+        line-height: 38px;
+        font-size: 20px;
+     }
+
+     #formField form .line div label.radioLabel {
+        padding-left: 50px;
+        margin-right: 30px;
+        margin-top: 11px;
+     }
+
+     #formField form .line div label.radioLabel:before {
+        float: left;
+        content: "";
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        position: absolute;
+        left: 0;
+        bottom: -12px;
+        border: 1px solid rgb(190,190,190);
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+    }
+
+    #formField form .line div input[type="radio"]:checked + label.radioLabel:before {
+        content: "\f111";
+        font-size: 30px;
+        line-height: 41px;
+        color: rgb(255,192,0);
+        font-family: FontAwesome;
+        text-align: center;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+    }
+
+    #formField form .line div input[type="checkbox"] {
+        display: none;
+    }
+
+    #formField form .line div label.checkboxLabel:before {
+        float: left;
+        margin: 2px 43px 0 0;
+        content: "";
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgb(190,190,190);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    #formField form .line div input[type="checkbox"]:checked + label.checkboxLabel:before {
+        content: "\f00c";
+        line-height: 40px;
+        color: rgb(255,192,0);
+        font-size: 25px;
+        font-family: FontAwesome;
+        text-align: center;
+        border: 1px solid rgb(190,190,190);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .robotAndButton {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .robotAndButton .button {
+        width: 100%;
+        height: 50px;
+    }
+
+    .robotAndButton .button input {
+        width: 100%;
+        height: 50px;
+        font-size: 15px;
+        border-bottom: 2px solid rgb(255,150,0);
+    }
+
+    #writeAboutUS {
+        display: none;
+    }
+
+    #articles {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    #articles .pagination {
+        display: none;
+    }
+
+    #articles .letter, #questions .letter {
+        width: 90%;
+    }
+
+    #articles article {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    #articles article .financialLogo {
+        width: 100px;
+        height: 72px;
+        padding-top: 28px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+    }
+
+    #articles article .financialLogo img {
+        width: 70px;
+    }
+
+    #articles article h4 {
+        font-size: 45px;
+    }
+
+    #articles article p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    #articles article .button {
+        width: 100%;
+        height: 50px;
+        padding: 0 0 4px 0;
+    }
+
+    #articles article .button .cover {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        padding: 0;
+        border-bottom: 2px solid rgb(255,150,0);
+    }
+
+    #questions .button {
+        width: 100%;
+        height: 50px;
+        padding-bottom: 2px;
+    }
+
+    #questions .button .shadow {
+        width: 100%;
+        height: 50px;
+        padding-bottom: 2px;
+    }
+
+    #questions .button .shadow .cover {
+        width: 100%;
+        height: 50px;
+        padding: 0;
+        line-height: 50px;
+    }
+
+    footer {
+        background: rgb(40,40,40);
+        min-height: 203px;
+    }
+
+    footer  p {
+        line-height: 27px;
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    #header.landingPage {
+        min-height: 600px;
+        background: none;
+    }
+
+    #mainContent.landingPage {
+        width: 90%;
+    }
+
+    #mainContent.landingPage .button {
+        width: 100%;
+        height: auto;
+        margin-top: 90px;
+        padding-bottom: 4px;
+    }
+
+    #mainContent.landingPage .button .cover {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        border-bottom: 5px solid rgb(255,150,0);
+    }
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.4)      and  (max-width: 355px),
+only screen and (   min--moz-device-pixel-ratio: 1.4)      and  (max-width: 355px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and  (max-width: 355px),
+only screen and (        min-device-pixel-ratio: 1.4)      and  (max-width: 355px),
+only screen and (                min-resolution: 137dpi) and  (max-width: 355px),
+only screen and (                min-resolution: 1.4dppx)  and  (max-width: 355px)  {
+     
+     #formField form .line:first-child div input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+     }  
+     
+     #formField form .line .button {
+        margin-left: 0;
+     }
+     
+     #formField form .line div label.radioLabel {
+        margin-bottom: 22px;
+     }
+
+}

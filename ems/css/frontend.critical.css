@@ -1,0 +1,606 @@
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+?, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+font-size-adjust: none;
+-webkit-text-size-adjust:none;
+}
+
+
+@-webkit-viewport{width:device-width}
+@-moz-viewport{width:device-width}
+@-ms-viewport{width:device-width}
+@-o-viewport{width:device-width}
+@viewport{width:device-width}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(80,80,80);
+    line-height: 19px;
+    background: rgb(255,255,255);
+    overflow-x: hidden;
+    margin: 0;
+}     
+
+.letter {
+    position: relative;
+    margin: 0 auto 0 auto;
+}
+
+h2 {
+    font-size: 36px;     
+    line-height: 36px;
+    font-weight: 600;
+    color: rgb(255,192,0);
+    text-align: center;
+}
+
+body > .fucking-eu-cookies {
+    background: #fce051;
+    padding: 15px 5%; 
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body > .fucking-eu-cookies a {
+    color: #fff;
+}
+
+body > .fucking-eu-cookies span {
+    width: 100%;
+}
+
+body > .fucking-eu-cookies button {
+    margin: 0 auto;
+    padding: 4px;
+    background: rgb(255,192,5);
+    border: none;
+    border-bottom: 1px solid #ff9600;
+    -webkit-border-radius: 3px;         
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #fff;   
+}
+
+nav {
+    position: fixed;
+    top: 27%;
+    right: 5%;
+    z-index: 10;
+}
+
+nav a {
+    display: block;
+    width: 60px;
+    height: 44px;
+    padding: 16px 0 0 0;
+    border: 1px solid rgb(220,220,220);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    color: rgb(220,220,220);
+    font-size: 29px;
+    text-align: center;
+}
+
+nav .spacer {
+    width: 3px;
+    height: 25px;
+    margin-left: 30px;
+    background: url('../images/nav_spacer.png') top center no-repeat;
+}
+
+#header {
+    width:100%;
+    min-height: 677px;
+    background: url('../images/background_header.jpg') top center no-repeat;
+}
+
+.contactLine {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contactLine div a {
+    float: left;
+    line-height: 33px;
+    padding: 1px 8px 1px 5px;
+    margin: 27px 12px 0 0;
+    background: rgba(255,255,255,0.9);
+    border: 1px solid rgb(220,220,220);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: rgb(40,40,40);
+    text-decoration: none;
+}
+
+.contactLine .left a:first-child:before {
+    content: "info@exekutormasmulu.cz";
+}
+
+.contactLine .left a:nth-child(2):before {
+    content: "(+420) 605 960 787";
+}
+
+.contactLine .right a:first-child:before {
+    content: "Blog";
+}
+
+.contactLine div a:last-child {
+    margin-right: 0;
+}
+
+.contactLine div a img {
+    float: left;
+    margin-top: 8px;
+}
+
+.contactLine div span {
+    float: left;
+    width: 1px;
+    height: 23px;
+    margin: 6px 7px 0 7px;
+    background: rgb(220,220,220);
+}
+
+.contactLine div a.facebook {
+    width: 37px;
+    height: 37px;
+    padding: 0;
+    border: none;
+    background: url('../images/facebook.png') top center no-repeat;
+
+}
+
+.contactLine .left {
+    margin-left: 5%;
+}
+
+.contactLine .right {
+    margin-right: 5%;
+}
+
+#logo {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#laptop {
+    width: 100%;
+    margin-top: 37px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#laptop .youtube{
+    position: relative;
+    width: 576px;
+    height: 367px;
+    margin-right: 225px;
+    padding: 28px 0 0 78px;
+    background: url('../images/laptop.png');
+}
+
+#lastArticles {
+    position: relative;
+    margin-right: -62px;
+    margin-top: 10px;
+    width: 297px;
+    height: 350px;
+}
+
+#lastArticles div {
+    float: right;
+    position: relative;
+    width: 300px;
+    margin-top: 10px;
+    z-index: 5;
+}
+
+#lastArticles > div:first-child {
+    width: auto;
+    float: right;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 15px 20px 15px 20px;
+    background: rgba(255,255,255,1);
+    border: 1px solid rgb(220,220,220);
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 17px;
+    color: rgb(40,40,40);
+}
+
+#lastArticles > div:first-child img {
+    float: left;
+    margin: 1px 10px 0 0;
+}
+
+#lastArticles > div:first-child span {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 4px;
+    height: 50px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: rgb(255,192,0);
+}
+
+#lastArticles a {
+    float: right;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 15px 20px 15px 20px;
+    background: rgba(255,255,255,0.9);
+    border: 1px solid rgb(220,220,220);
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 16px;
+    color: rgb(80,80,80);
+    text-decoration: none;
+}
+
+#lastArticles a:hover {
+    background: rgba(255,255,255,1);
+    color: rgb(40,40,40);
+}
+
+#laptop .formArrow {
+    display: block;
+    position: absolute;
+    right: -180px;
+    top: 30px;
+    width: 155px;
+    height: 278px;   
+    background: url('../images/arrow.png');     
+}
+
+/******************************MEDIA****************************/
+@media only screen and (max-width : 1360px) {
+    #laptop .formArrow {
+        right: -165px;   
+    }
+}
+
+@media only screen and (max-width : 1320px) {
+    #laptop .formArrow {
+        right: -132px;    
+    }
+}
+
+@media only screen and (max-width : 1240px) {
+    #laptop .formArrow {
+        right: -110px;       
+    }
+}
+
+
+@media only screen and (max-width : 1130px) {
+    #laptop {
+        margin-top: 27px;
+    }
+
+    #formField form .line > div {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #lastArticles {
+        position: relative;
+        width: 60%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    #lastArticles div:first-child {
+        display: block;
+        width: 94%;
+        padding-left: 3%;
+        padding-right: 3%;
+        text-align: center;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+    #lastArticles div:first-child img {
+        display: none;
+    }
+
+    #lastArticles div:first-child span {
+        height: 100%;
+    }
+
+     #lastArticles div {
+        float: left;
+        width: 100%;
+     }
+
+     #lastArticles div a {
+        display: block;
+        width: 94%;
+        margin: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+        text-align: center;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+     }
+
+    #laptop .youtube {
+        position: relative;
+        width: 60%;
+        height: initial;
+        margin-top: 70px;
+        margin-right: 0;
+        padding: 0;
+        background: none;
+    }
+
+     #laptop .youtube iframe {
+        width: 100%;
+        min-height: 410px;
+        margin: 0;
+     }
+     
+     #laptop .formArrow {
+        right: -165px;
+        top: -356px;
+    }
+}
+
+@media only screen and (max-width : 1130px) {
+    body {
+        min-width: 920px;
+        overflow-x: visible;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.4)      and  (max-width: 920px),
+only screen and (   min--moz-device-pixel-ratio: 1.4)      and  (max-width: 920px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and  (max-width: 920px),
+only screen and (        min-device-pixel-ratio: 1.4)      and  (max-width: 920px),
+only screen and (                min-resolution: 137dpi) and  (max-width: 920px),
+only screen and (                min-resolution: 1.4dppx)  and  (max-width: 920px)
+{
+
+    body {
+        min-width: 0;
+        overflow-x: hidden;
+    }
+
+
+    h2, h3 {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #header {
+        background: none;
+        height: auto;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    
+    .contactLine {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contactLine .left, .contactLine .right {
+        float: none;
+        width: auto;
+        margin: 0;
+    }
+    
+    .contactLine .left {
+        padding-left: 5%;
+    }
+    
+    .contactLine .right {
+        padding-right: 5%;
+    }
+    
+    .contactLine .left a:last-child {
+        margin-right: 12px;
+    }
+    
+    .contactLine .left a:first-child {
+        margin-left: 0;
+    }
+    
+    .contactLine .right a:last-child {
+        margin-right: 0;
+    }
+               
+    .contactLine .left a, .contactLine .right a, .contactLine div a.facebook {
+        display: block;
+        width: 54px;
+        height: 54px;
+        padding: 0;
+        margin-left: 12px;
+        margin-right: 12px;
+        background: rgb(255,192,0);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid rgb(255,150,0);
+        font-size: 20px;
+        color: rgb(255,255,255);
+        line-height: 54px;
+        text-align: center;
+    }
+
+    .contactLine div a.facebook {
+        background: rgb(60,90,153);
+        border-bottom: 2px solid rgb(33,70,147);
+    }
+
+    .contactLine .left a:first-child:before {
+        content: "@";
+        font-weight: 800;
+        font-family: 'Source Sans Pro';
+        margin-left: 0;
+    }
+
+    .contactLine .left a:nth-child(2):before {
+        content: "\f095";
+        font-family: FontAwesome;
+    }
+
+    .contactLine .right a:first-child:before {
+        content: "\f086";
+        font-family: FontAwesome;
+    }
+
+    .contactLine .right a:nth-child(2):before {
+        content: "\f09a";
+        font-family: FontAwesome;
+        margin-right: 0;
+    }
+
+    .contactLine div a img, .contactLine div a span {
+        display: none;
+    }
+
+    .contactLine div a.facebook {
+        background-image: none;
+    }
+    
+    #logo {
+        margin-top: 35px;
+    }
+
+    #logo img {
+        width: 90%;
+        height: 30%;
+    }
+
+    #lastArticles {
+        position: relative;
+        width: 90%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    #lastArticles div:first-child {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background: rgb(250,250,250);
+        border-bottom: 2px solid rgb(220,220,220);
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    #lastArticles div:first-child img {
+        display: none;
+    }
+
+    #lastArticles div:first-child span {
+        width: 2px;
+        height: 100%;
+    }
+
+     #lastArticles div {
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+        border: none;
+     }                        
+
+     #lastArticles div a {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        background: rgb(251,251,251);
+        border-bottom: 2px solid rgb(230,230,230);
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: center;
+     }
+
+    #laptop .youtube {
+        position: relative;
+        width: 90%;
+        height: auto;
+        margin-top: 30px;
+        padding: 0;
+        background: none;
+    }
+
+     #laptop .youtube iframe {
+        width: 100%;
+        height: auto;
+        margin: 0;
+     }
+     
+     #laptop .formArrow {
+        display: none; 
+    }
+}
+
+
+

@@ -1,0 +1,418 @@
+/* RESET + BASE */
+body{
+	font-family:'Open Sans', Verdana, sans-serif;
+	line-height:1.2;
+	color:#333;
+	background:#fff;
+	margin:0;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+	margin:0;
+}
+img{
+	border:0;
+}
+ul,ol{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+p{
+	margin:0 0 1em;
+}
+
+/*
+form,fieldset,legend{padding:0;margin:0;}
+p,form,fieldset,table{margin:0 0 1em;}
+img,fieldset{border:0;}
+ul,ol,dl{padding:0;margin:0 1em 1em 3em;}
+li,dt,dd{padding:0;margin:0;}
+dd{margin-left:1em;}
+blockquote{margin:0 1em 1em;}
+table{border-collapse:collapse;}
+pre,code,kbd,samp,tt{font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Trebuchet MS', Verdana, sans-serif;}
+p,ul,ol,dl,table,pre{font-size:1.5em;line-height:1.62;}
+legend{font-size:1.5em;}
+form ol{margin:0 0 1em;list-style:none;}
+form li{padding-top:1em;}
+*/
+
+a{
+	text-decoration:none;
+	color:#c34;
+	outline:0;
+}
+
+/* HEADER */
+#header{
+	background:#f2f2ef;
+	padding-bottom:10px;
+	border-bottom:1px solid #ccc;
+	margin-bottom:15px;
+}
+#header #title,
+#header #description{
+	width:744px;
+	margin:0 auto;
+}
+#header #title{
+	font-size:1.8em;
+	line-height:1.33;
+}
+#header #description{
+	font-size:1.5em;
+	line-height:1.45;
+}
+
+/* NAV */
+#nav{
+	color:#fff;
+	background:#444;
+	border-top:1px solid #444;
+}
+#nav ul{
+	width:744px;
+	margin:0 auto 15px;
+	*zoom:1;
+}
+#nav ul:after{
+	height:0;
+	clear:both;
+	display:block;
+	visibility:hidden;
+	content:".";
+}
+#nav li{
+	font-size:1.5em;
+	line-height:1.27;
+	float:left;
+}
+#nav li.has-menu{
+	position:relative;
+	z-index:2;
+}
+#nav a{
+	color:#fff;
+	padding:7px 14px;
+	display:block;
+}
+#nav .selected a{
+	color:#333;
+	background:#f2f2ef;
+}
+#nav a:hover,
+#nav .selected a:hover,
+#nav .menu-open a{
+	color:#fff;
+	background:#c43;
+}
+#nav h1,
+#nav strong{
+	font-size:1em;
+	font-weight:normal;
+	padding:7px 14px 7px 0;
+	display:block;
+}
+
+/* MENU */
+#nav ul.menu{
+	width:260px;
+	border-top:1px solid #777;
+	border-right:1px solid #888;
+	border-left:1px solid #888;
+	margin:-1px 0 0;
+	position:absolute;
+	top:100%;
+	left:-1px;
+	z-index:2;
+}
+#nav .menu li{
+	font-size:1.5em;
+	line-height:1.45;
+	float:none;
+	position:relative;
+	*zoom:1;
+}
+#nav .menu a{
+	padding:10px 8px 10px 68px;
+	border-bottom:1px solid #999;
+	*zoom:1;
+}
+#nav .menu a:after{
+	height:0;
+	clear:both;
+	display:block;
+	visibility:hidden;
+	content:".";
+}
+#nav .menu a,
+#nav .selected .menu a{
+	color:#333;
+	background:#f2f2ef;
+}
+#nav .menu a:hover,
+#nav .selected .menu a:hover{
+	color:#333;
+	background:#fff;
+}
+#nav .menu span{
+	display:block;
+}
+#nav .menu .thumbnail{
+	background:#fff;
+	padding:1px;
+	border:1px solid #ddd;
+	/* margin:-2px 0 0 -60px;
+	float:left; */
+	position:absolute;
+	top:8px;
+	left:8px;
+}
+#nav .menu .thumbnail img{
+	width:48px;
+	height:32px;
+	/*border:1px solid #ccc;*/
+	display:block;
+}
+
+#nav .menu a .description,
+#nav .selected .menu a .description{
+	color:#777;
+}
+
+/*
+#nav .menu a:hover .title,
+#nav .selected .menu a:hover .title{
+	color:#fff;
+}
+#nav .menu a:hover .description,
+#nav .selected .menu a:hover .description{
+	color:#ccc;
+}
+*/
+
+/* CONTENT */
+#content{
+	width:744px;
+	margin:auto;
+	position:relative;
+	*zoom:1;
+}
+#content:after{
+	height:0;
+	clear:both;
+	display:block;
+	visibility:hidden;
+	content:".";
+}
+
+/* PROJECTS */
+#projects li{
+	margin:0 0 15px 15px;
+	float:left;
+}
+#projects li#project-1,
+#projects li#project-4,
+#projects li#project-7{
+	margin-left:0;
+}
+#projects a{
+	background:#f2f2ef;
+	padding:10px 10px 7px;
+	border:1px solid #ccc;
+	display:block;
+}
+#projects a img{
+	width:214px;
+	height:142px;
+	border:1px solid #bbb;
+	margin-bottom:7px;
+	display:block;
+}
+#projects a span{
+	display:block;
+}
+#projects a .title{
+	font-size:1.5em;
+	line-height:1.29;
+	color:#333;
+}
+#projects a .description{
+	font-size:1.5em;
+	line-height:1.55;
+	color:#777;
+}
+#projects a:hover{
+	background:#fff;
+}
+#projects a:hover img{
+}
+#projects a:hover .title{
+	/*color:#fff;*/
+}
+#projects a:hover .description{
+	/*color:#ccc;*/
+}
+
+/* IMAGES */
+#images{
+	width:744px;
+	overflow:hidden;
+	position:relative; /* IE */
+}
+#images li{
+	width:744px;
+	margin-bottom:30px;
+}
+#images div{
+	padding:10px;
+	border:1px solid #ccc;
+	margin-bottom:6px;
+}
+#images img{
+	width:720px;
+	/*height:480px;*/
+	border:1px solid #bbb;
+	display:block;
+}
+#images p{
+	font-size:1.5em;
+	line-height:1.55;
+	color:#777;
+	margin:0;
+}
+#images li.first{
+	position:relative;
+
+}
+#images .first p{
+	width:330px;
+	margin:0;
+	position:absolute;
+	top:32px;
+	left:32px;
+}
+#images #shrink-lamp-1 p{
+	color:#fff;
+}
+#images #argumentum-3,
+#images #argumentum-5,{
+	position:relative;
+}
+#images #argumentum-3 p{
+	width:696px;
+	color:#fff;
+	background:url(../images/caption.png);
+	*background:none;
+	*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/caption.png',sizingMethod='crop');
+	padding:12px;
+	position:absolute;
+}
+#images #argumentum-3 p{
+	top:18px;
+	left:12px;
+}
+#images #argumentum-5 p,{
+	width:330px;
+	margin:0;
+	position:absolute;
+	top:24px;
+	left:24px;
+}
+
+#images-nav a,
+#images-nav span{
+	width:41px;
+	height:0;
+	background:url(../images/btn.gif) no-repeat 10px 10px;
+	padding-top:41px;
+	display:block;
+	overflow:hidden;
+	position:absolute;
+	top:230px;
+}
+#images-nav .prev{
+	margin-right:10px;
+	right:100%;
+}
+#images-nav a.prev:hover{
+	background-position:10px -32px;
+}
+#images-nav .next{
+	background-position:10px -74px;
+	margin-left:10px;
+	left:100%;
+}
+#images-nav a.next:hover{
+	background-position:10px -116px;
+}
+
+
+/* RESUME */
+#resume{
+	padding-left:220px;
+}
+#resume h3{
+	font-size:1.5em;
+	line-height:1.31;
+	float:left;
+	margin:-1px 0 0 -220px;
+	_position:relative;
+	_left:220px;
+}
+#resume h4{
+	font-size:1.5em;
+}
+#resume ul,
+#resume ol{
+	font-size:1.5em;
+	line-height:1.55;
+	color:#666;
+	margin:0 0 1em;
+}
+#resume .summary,
+#resume .experience,
+#resume .skills,
+#resume .education{
+	margin-bottom:2em;
+}
+#resume .summary ul{
+	margin-left:1em;
+	list-style:disc;
+}
+#resume .experience .description{
+	margin:1em 0 2em;
+}
+#resume .skills ul{
+	*zoom:1;
+}
+#resume .skills ul:after{
+	height:0;
+	clear:both;
+	display:block;
+	visibility:hidden;
+	content:".";
+}
+#resume .skills li{
+	width:37%;
+	float:left;
+}
+#resume .education li{
+	margin-bottom:1.5em;
+}
+/*
+#resume .title{
+	font-size:13px;
+}
+*/
+
+#press a:hover{
+	text-decoration:underline;
+}
+#press ul{
+	font-size:1.5em;
+	line-height:1.55;
+	margin:0 0 1em 1em;
+	list-style:disc;
+}
